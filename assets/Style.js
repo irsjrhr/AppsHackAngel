@@ -24,10 +24,22 @@ let Style = StyleSheet.create({
     login_header:{
         fontSize: 50,
         color: "white",
-        textAlign: "center",
+        textAlign: "left",
         // marginLeft: -10,
     },
+    login_subHeader:{
+        fontSize: 20,
+        color: "white",
+        textAlign: "left",
+        // marginLeft: -10,
+        marginBottom:40,
+        marginTop:40,
+        lineHeight:30
+        
+    },
     box_login:{
+
+
     },
 
     box_img:{

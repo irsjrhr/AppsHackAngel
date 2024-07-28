@@ -29,7 +29,6 @@ var Login = ({ navigation }) => {
 
 
                 
-                <Text style ={ Style.login_header }> Log In </Text>
 
 
                 <View style={ Style.box_img  }>
@@ -45,7 +44,18 @@ var Login = ({ navigation }) => {
                 
                 
                 <View style={ Style.box_login }>
-                    <View style  ={ Style.box_input } >
+                    <Text style ={ Style.login_header }> TurnMe </Text>
+                    <Text style ={ Style.login_subHeader }> Daerah kamu banjir, butuh ojek cepat buat ke kantor? TurnMe solusinya
+                    Aplikasi yang menawarkan jalan alternatif ketika perjalananmu bermasalah </Text>
+                    <TouchableOpacity onPress={()=> navigation.navigate("Maps")}>
+                        <View style  ={ [ Style.box_input, { backgroundColor:"limegreen" } ] } >
+                            <Text style={  { textAlign:"center", fontSize: 19, color:"white"} }>
+                                Get Started
+                            </Text>
+                        </View>
+                    </TouchableOpacity> 
+
+                    {/* <View style  ={ Style.box_input } >
                         <TextInput
                         style={Style.box_input.input_place}
                         placeholder="Email Or Phone"
@@ -65,12 +75,12 @@ var Login = ({ navigation }) => {
                                 Login
                             </Text>
                         </View>
-                    </TouchableOpacity>
+                    </TouchableOpacity> */}
 
                 </View>
 
 
-                <View style={ Style.box_badge }>
+                {/* <View style={ Style.box_badge }>
                     <Text style={ Style.text_badge }> Connected With  </Text> 
                 </View>
 
@@ -83,7 +93,7 @@ var Login = ({ navigation }) => {
                         
                     </Image>
 
-                </View>
+                </View> */}
             </View>
 
 

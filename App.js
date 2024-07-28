@@ -8,7 +8,6 @@ import { useFonts } from 'expo-font';
 
 import Login from './Page/Login'
 import Maps from './Page/Maps'
-import Maps_ride from './Page/Maps_ride'
 import Driver_wait from './Page/Driver_wait'
 
 // Buat stack navigator
@@ -16,19 +15,19 @@ const Stack = createStackNavigator();
 
 function App() {
 
-  const [fontsLoaded] = useFonts({
-    'poppins': require('./assets/poppins.ttf'), // Ganti dengan path font Anda
-  });
-  if (!fontsLoaded) {
-      console.log('Font tidak terload');
-  }
+  // const [fontsLoaded] = useFonts({
+  //   'poppins': require('./assets/poppins.ttf'), // Ganti dengan path font Anda
+  // });
+  // if (!fontsLoaded) {
+  //     console.log('Font tidak terload');
+  // }
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home" screenOptions={ { headerShown : false } }>
         <Stack.Screen name="Login"  component={Login} />
-        <Stack.Screen name="Driver_wait"  component={Driver_wait} />
         <Stack.Screen name="Maps"  component={Maps} />
-        <Stack.Screen name="Maps_ride"  component={Maps_ride} />
+        <Stack.Screen name="Driver_wait"  component={Driver_wait} />
+        {/* <Stack.Screen name="Maps_ride"  component={Maps_ride} /> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
